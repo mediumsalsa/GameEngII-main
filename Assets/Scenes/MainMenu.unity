@@ -1505,12 +1505,12 @@ PrefabInstance:
     - target: {fileID: 725711720319384260, guid: e778663d324e19a48ab9d91fcd9af8f9,
         type: 3}
       propertyPath: xSpeed
-      value: 3000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 725711720319384260, guid: e778663d324e19a48ab9d91fcd9af8f9,
         type: 3}
       propertyPath: ySpeed
-      value: 3000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1450816010896785426, guid: e778663d324e19a48ab9d91fcd9af8f9,
         type: 3}
