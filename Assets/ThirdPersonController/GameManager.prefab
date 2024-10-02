@@ -3789,6 +3789,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1109718231792275194}
   - {fileID: 1917041657530361214}
   - {fileID: 2059945767187325435}
   m_Father: {fileID: 3418709221229150666}
@@ -3829,7 +3830,6 @@ MonoBehaviour:
   cameraTransform: {fileID: 5773637704276671356}
   characterController: {fileID: 322026907196466210}
   isSprinting: 0
-  playerVelocity: 0
   playerIsGrounded: 0
   walkingSpeed: 2
   joggingSpeed: 4
@@ -6026,3 +6026,124 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Back
+--- !u!1001 &642954436603128081
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2290988587711564338}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.057969093
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.199
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_Name
+      value: Y Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f28e1a472cbafbb4abcf8b61c71eb195, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'Idle'\n\tFrom
+        animation clip 'Walking'\n\tFrom animation clip 'Running'"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52495db43b6dbfd428834845bfebc01c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6777744149524817562}
+  m_SourcePrefab: {fileID: 100100000, guid: 52495db43b6dbfd428834845bfebc01c, type: 3}
+--- !u!1 &300987419890586688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 52495db43b6dbfd428834845bfebc01c,
+    type: 3}
+  m_PrefabInstance: {fileID: 642954436603128081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6777744149524817562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300987419890586688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf631d1500bfc2f46810bec86259b4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 300987419890586688}
+  anim: {fileID: 6451034894288884864}
+--- !u!4 &1109718231792275194 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52495db43b6dbfd428834845bfebc01c,
+    type: 3}
+  m_PrefabInstance: {fileID: 642954436603128081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6451034894288884864 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 52495db43b6dbfd428834845bfebc01c,
+    type: 3}
+  m_PrefabInstance: {fileID: 642954436603128081}
+  m_PrefabAsset: {fileID: 0}

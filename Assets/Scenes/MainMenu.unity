@@ -1442,6 +1442,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1828312638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7034935583075056663, guid: e778663d324e19a48ab9d91fcd9af8f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2384008851326326069}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1867366587 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2188615708840053238, guid: e778663d324e19a48ab9d91fcd9af8f9,
@@ -1647,6 +1653,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: MainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 6777744149524817562, guid: e778663d324e19a48ab9d91fcd9af8f9,
+        type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1828312638}
     - target: {fileID: 6790705747792970305, guid: e778663d324e19a48ab9d91fcd9af8f9,
         type: 3}
       propertyPath: m_Name
@@ -1722,6 +1733,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 9213946418629618998, guid: e778663d324e19a48ab9d91fcd9af8f9, type: 3}
+    - {fileID: 5663269416064387049, guid: e778663d324e19a48ab9d91fcd9af8f9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6790705747792970305, guid: e778663d324e19a48ab9d91fcd9af8f9,
