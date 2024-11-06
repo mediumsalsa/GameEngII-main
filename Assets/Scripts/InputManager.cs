@@ -28,6 +28,9 @@ public class InputManager : MonoBehaviour
     private InputAction look;
     private InputAction jump;
     private InputAction sprint;
+    private InputAction playerFire;
+    private InteractionManager interactionManager;
+
 
     [Header("Camera Inputs")]
     public float scrollInput; // Scroll input for camera zoom
@@ -43,10 +46,12 @@ public class InputManager : MonoBehaviour
         HandleJumpInput();
         HandleCameraInput();
         HandlePauseKeyInput();
+        HandleInteractionInput();
     }
 
     private void OnEnable()
     {
+        interactionManager = FindObjectOfType<InteractionManager>();
         playerControls = new PlayerInputActions();
         move = playerControls.Player.Move;
         move.Enable();
@@ -59,6 +64,9 @@ public class InputManager : MonoBehaviour
 
         sprint = playerControls.Player.Sprint;
         sprint.Enable();
+
+        playerFire = playerControls.Player.Fire;
+        playerFire.Enable();
     }
     private void OnDisable()
     {
@@ -66,6 +74,15 @@ public class InputManager : MonoBehaviour
         look.Disable();
         jump.Disable();
         sprint.Disable();
+        playerFire.Disable();
+    }
+
+    private void HandleInteractionInput()
+    {
+        if (playerFire.IsPressed() && interactionManager.interactablePossible)
+        {
+            interactionManager.Interact();
+        }
     }
 
 
@@ -117,14 +134,6 @@ public class InputManager : MonoBehaviour
             playerLocomotionHandler.HandleJump(); // Trigger jump in locomotion handler
         }
     }
-
-    //public void OnJump(InputAction.CallbackContext context)
-    //{
-    //    if (context.performed)
-    //    {
-    //        playerLocomotionHandler.HandleJump();
-    //    }
-    //}
 
 
 
