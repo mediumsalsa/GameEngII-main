@@ -1738,6 +1738,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: TestLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 515732063566655833, guid: e778663d324e19a48ab9d91fcd9af8f9,
+        type: 3}
+      propertyPath: playerStats
+      value: 
+      objectReference: {fileID: 11400000, guid: 8d044536ab8032641bbdc50491cf6da9,
+        type: 2}
     - target: {fileID: 725711720319384260, guid: e778663d324e19a48ab9d91fcd9af8f9,
         type: 3}
       propertyPath: xSpeed
